@@ -10,8 +10,10 @@
   </head>
 
   <body>
+      <a href="/places">Home</a>
+      |
       <% @user = User.find_by({ "id" => session["user_id"] }) %>
-      <% if @user == nil %>
+      <% if @current_user == nil %>
       <a href="/login">Login</a>
       |
       <a href="/users/new">Signup</a>
