@@ -1,4 +1,4 @@
-<h1>New Entry</h1>
+<h1 style="margin-bottom: 20px;">New Entry</h1>
 
 <% if @current_user != nil %>
 <form action="/entries" method="post" enctype="multipart/form-data">
@@ -24,7 +24,7 @@
     <input type="file" name="uploaded_image" id="uploaded_image_input" accept = "image/png,image/jpg,image/jpeg,image/gif" class="form-control">
   </p>
 
-  <button>Save</button>
+  <button class="btn btn-primary">Save Entry</button>
 </form>
 <% else %>
   You must first <a href="/login">login</a> to post.
